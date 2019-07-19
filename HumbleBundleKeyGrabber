@@ -24,7 +24,7 @@ function get_keys() {
 	let keys = "";
     for (let key of document.getElementsByClassName("keyfield-value"))
     {
-        if(key.innerText != 'Reveal your Steam key')
+        if(key.innerText != 'Reveal your Steam key' && key.innerText != 'Claim to Uplay account')
         {
             keys = keys + key.innerText + "\n";
         }
