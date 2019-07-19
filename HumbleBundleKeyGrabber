@@ -9,13 +9,14 @@
 // ==/UserScript==
 
 function show_all() {
-for (let key of document.getElementsByClassName("keyfield-value"))
-            {
-                if(key.innerText != 'Reveal your Steam key')
-                {
-                    key.click()
-                }
-            }
+    for(let key of document.getElementsByClassName("keyfield-value"))
+    {
+        if(key.innerText == 'Reveal your Steam key')
+        {
+            key.click()
+            setTimeout(show_all, 100);
+        }
+    }
 }
 
 function get_keys() {
