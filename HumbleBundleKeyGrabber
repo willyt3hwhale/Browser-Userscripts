@@ -13,8 +13,9 @@ function show_all() {
     {
         if(key.innerText == 'Reveal your Steam key')
         {
-            key.click()
+            key.click();
             setTimeout(show_all, 100);
+            return;
         }
     }
 }
